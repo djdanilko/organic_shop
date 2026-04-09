@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 .nav {
@@ -41,4 +41,11 @@
 }
 .nav-link.active::after {
   background: #747bff;
+} */
+.header__location-icon {
+  color: 808080;
+}
+
+.header__search-icon {
+  color: 1A1A1A;
 }

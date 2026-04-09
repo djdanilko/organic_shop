@@ -1,109 +1,217 @@
 <header class="header">
-  <div class="container">
-    <address>
+  <div class="container header__container">
+    <address class="header__address">
       <a
+        class="header__address-link"
         href="https://www.google.com/maps/search/Store+Location:+Lincoln-+344,+Illinois,+Chicago,+USA/@41.9392426,-87.7548245,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D"
         target="_blank"
       >
-        map<svg class="location" width="15" height="18">
-          <use href=""></use>
+        <svg class="header__location-icon" width="15" height="18">
+          <use href="./img/svg-sprite.svg#icon-map-pin"></use>
         </svg>
         Store Location: Lincoln- 344, Illinois, Chicago, USA</a
       >
     </address>
-    <ul>
-      <li>
-        <a href=""
-          >Eng v<svg class="" width="7" height="3.5">
-            <use href=""></use></svg
-        ></a>
+    <ul class="header__top-controls">
+      <li class="header__top-controls-item">
+        <button class="header__top-controls-btn" type="button">
+          Eng
+          <svg class="header__top-controls-icon" width="7" height="3.5">
+            <use href="./img/svg-sprite.svg#icon-down"></use>
+          </svg>
+        </button>
       </li>
-      <li>
-        <a href=""
-          >USD v
-          <svg class="" width="7" height="3.5">
-            <use href=""></use></svg
-        ></a>
+      <li class="header__top-controls-item">
+        <button class="header__top-controls-btn" type="button">
+          USD
+          <svg class="header__top-controls-icon" width="7" height="3.5">
+            <use href="./img/svg-sprite.svg#icon-down"></use>
+          </svg>
+        </button>
       </li>
     </ul>
-    <a href="./index.html" class="logo"
-      >logo<svg class="logo" width="32" height="32">
-        <use href=""></use>
+    <a href="./index.html" class="header__logo">
+      <svg class="header__logo-icon" width="32" height="32">
+        <use href="./img/svg-sprite.svg#icon-logo"></use>
       </svg>
       Ecobazar
     </a>
-    <form action="">
-      <!-- label + svg search -->
-      <input type="text" placeholder="Search" />
-      <button type="submit">Search</button>
+    <form class="header__search" action="">
+      <label class="header__search-field">
+        <svg class="header__search-icon" width="20" height="20">
+          <use href="./img/svg-sprite.svg#icon-search"></use>
+        </svg>
+        <input
+          class="header__search-input"
+          type="search"
+          name="search"
+          placeholder="Search"
+        />
+      </label>
+      <button class="header__search-button" type="submit">Search</button>
     </form>
-    <address>
-      <a href="tel:2195550114">
-        call
-        <svg class="call" width="40" height="40">
-          <use href=""></use></svg
-        ><span>Customer Services</span> (219) 555-0114</a
+    <address class="header__contact">
+      <a class="header__contact-link" href="tel:2195550114">
+        <svg class="header__contact-icon" width="40" height="40">
+          <use href="./img/svg-sprite.svg#icon-phone-call"></use></svg
+        ><span class="header__contact-label">Customer Services</span>
+        <span class="header__contact-phone">(219) 555-0114</span></a
       >
     </address>
-    <button class="header-burger-btn" type="button" aria-label="Open menu">
-      burger-menu
-      <svg class="header-burger" width="24" height="24">
-        <use href=""></use>
+    <button class="header__burger-btn" type="button" aria-label="Open menu">
+      <svg class="header__burger-icon" width="24" height="24">
+        <use href="./img/svg-sprite.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <a href=""
-      >All Categories v
-      <svg class="" width="7" height="3.5">
-        <use href=""></use></svg
-    ></a>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html"
-            >Home v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+    <button class="header__categories-toggle" type="button">
+      All Categories
+      <svg class="header__categories-toggle-icon" width="7" height="3.5">
+        <use href="./img/svg-sprite.svg#icon-down"></use>
+      </svg>
+    </button>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="./index.html">Home</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Home submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="./img/svg-sprite.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Shop v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Shop</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Shop submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="./img/svg-sprite.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Pages v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Pages</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Pages submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="./img/svg-sprite.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Blog v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Blog</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Blog submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="./img/svg-sprite.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">About Us</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Contact Us</a>
+        </li>
       </ul>
     </nav>
-    <ul>
-      <li>
-        love
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+    <ul class="header__actions">
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="./img/svg-sprite.svg#icon-heart"></use>
         </svg>
       </li>
-      <li>
-        cart
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="./img/svg-sprite.svg#icon-cart"></use>
         </svg>
       </li>
-      <li>
-        profile
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="./img/svg-sprite.svg#icon-user"></use>
         </svg>
+      </li>
+    </ul>
+    <div class="header__promo">
+      <div class="header__promo-categories">
+        <div class="header__categories-panel">
+          <ul class="header__categories-list" id="categories-list">
+            <!-- JS will render categories here -->
+          </ul>
+        </div>
+      </div>
+      <div class="header__promo-banner">
+        <div class="header__banner">
+          <h1 class="header__banner-title">Fresh &amp; Healthy Organic Food</h1>
+          <p class="header__banner-sale">
+            Sale Up to
+            <span class="header__banner-sale-highlight">48% OFF</span>
+          </p>
+          <button class="header__banner-button" type="button">
+            Shop now
+            <svg class="header__banner-button-icon" width="15" height="12">
+              <use href="./img/svg-sprite.svg#icon-go"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="header__features">
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="./img/svg-sprite.svg#icon-delivery-truck"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Free Shipping</h4>
+          <p class="header__features-desc">Free shipping with discount</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="./img/svg-sprite.svg#icon-headphones"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Great Support 24/7</h4>
+          <p class="header__features-desc">Instant access to Contact</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="./img/svg-sprite.svg#icon-shopping-bag"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">100% Secure Payment</h4>
+          <p class="header__features-desc">We ensure your money is safe</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="./img/svg-sprite.svg#icon-package"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Money-Back Guarantee</h4>
+          <p class="header__features-desc">30 days money-back</p>
+        </div>
       </li>
     </ul>
   </div>
