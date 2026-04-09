@@ -1,0 +1,53 @@
+.banner {
+}
+
+.banner__content {
+}
+
+.banner__list {
+  display: flex;
+  gap: 24px;
+}
+
+.banner__item {
+  background-image: url();
+}
+
+.banner__category {
+}
+
+.banner__title {
+}
+
+.banner__timer {
+}
+
+.timer {
+}
+
+.timer__field {
+}
+
+.timer__value {
+}
+
+.timer__label {
+}
+
+.banner__button {
+}
+
+.banner__icon {
+}
+
+.banner__description {
+}
+
+.banner__text {
+}
+
+.banner__price {
+}
+
+.banner__discount {
+}
