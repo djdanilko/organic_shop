@@ -5,116 +5,230 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" />  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organic Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/organic_shop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/organic_shop/assets/index-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/organic_shop/assets/index-DetF1IsE.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <address>
+  <div class="container header__container">
+    <address class="header__address">
       <a
+        class="header__address-link"
         href="https://www.google.com/maps/search/Store+Location:+Lincoln-+344,+Illinois,+Chicago,+USA/@41.9392426,-87.7548245,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQwNi4wIKXMDSoASAFQAw%3D%3D"
         target="_blank"
       >
-        map<svg class="location" width="15" height="18">
-          <use href=""></use>
+        <svg class="header__location-icon" width="15" height="18">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-map-pin"></use>
         </svg>
         Store Location: Lincoln- 344, Illinois, Chicago, USA</a
       >
     </address>
-    <ul>
-      <li>
-        <a href=""
-          >Eng v<svg class="" width="7" height="3.5">
-            <use href=""></use></svg
-        ></a>
+    <ul class="header__top-controls">
+      <li class="header__top-controls-item">
+        <button class="header__top-controls-btn" type="button">
+          Eng
+          <svg class="header__top-controls-icon" width="7" height="3.5">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+          </svg>
+        </button>
       </li>
-      <li>
-        <a href=""
-          >USD v
-          <svg class="" width="7" height="3.5">
-            <use href=""></use></svg
-        ></a>
+      <li class="header__top-controls-item">
+        <button class="header__top-controls-btn" type="button">
+          USD
+          <svg class="header__top-controls-icon" width="7" height="3.5">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+          </svg>
+        </button>
       </li>
     </ul>
-    <a href="./index.html" class="logo"
-      >logo<svg class="logo" width="32" height="32">
-        <use href=""></use>
+    <a href="./index.html" class="header__logo">
+      <svg class="header__logo-icon" width="32" height="32">
+        <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-logo"></use>
       </svg>
       Ecobazar
     </a>
-    <form action="">
-      <!-- label + svg search -->
-      <input type="text" placeholder="Search" />
-      <button type="submit">Search</button>
+    <form class="header__search" action="">
+      <label class="header__search-field">
+        <svg class="header__search-icon" width="20" height="20">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-search"></use>
+        </svg>
+        <input
+          class="header__search-input"
+          type="search"
+          name="search"
+          placeholder="Search"
+        />
+      </label>
+      <button class="header__search-button" type="submit">Search</button>
     </form>
-    <address>
-      <a href="tel:2195550114">
-        call
-        <svg class="call" width="40" height="40">
-          <use href=""></use></svg
-        ><span>Customer Services</span> (219) 555-0114</a
+    <address class="header__contact">
+      <a class="header__contact-link" href="tel:2195550114">
+        <svg class="header__contact-icon" width="40" height="40">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-phone-call"></use></svg
+        ><span class="header__contact-label">Customer Services</span>
+        <span class="header__contact-phone">(219) 555-0114</span></a
       >
     </address>
-    <button class="header-burger-btn" type="button" aria-label="Open menu">
-      burger-menu
-      <svg class="header-burger" width="24" height="24">
-        <use href=""></use>
+    <button class="header__burger-btn" type="button" aria-label="Open menu">
+      <svg class="header__burger-icon" width="24" height="24">
+        <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <a href=""
-      >All Categories v
-      <svg class="" width="7" height="3.5">
-        <use href=""></use></svg
-    ></a>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html"
-            >Home v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+    <button class="header__categories-toggle" type="button">
+      All Categories
+      <svg class="header__categories-toggle-icon" width="7" height="3.5">
+        <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+      </svg>
+    </button>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="./index.html">Home</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Home submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Shop v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Shop</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Shop submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Pages v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Pages</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Pages submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <a href=""
-            >Blog v<svg class="" width="7" height="3.5">
-              <use href=""></use></svg
-          ></a>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Blog</a>
+          <button
+            class="header__submenu-btn"
+            type="button"
+            aria-label="Open Blog submenu"
+          >
+            <svg class="header__submenu-icon" width="7" height="3.5">
+              <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-down"></use>
+            </svg>
+          </button>
         </li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">About Us</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="">Contact Us</a>
+        </li>
       </ul>
     </nav>
-    <ul>
-      <li>
-        love
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+    <ul class="header__actions">
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-heart"></use>
         </svg>
       </li>
-      <li>
-        cart
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-cart"></use>
         </svg>
       </li>
-      <li>
-        profile
-        <svg class="" width="32" height="32">
-          <use href=""></use>
+      <li class="header__actions-item">
+        <svg class="header__actions-icon" width="32" height="32">
+          <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-user"></use>
         </svg>
+      </li>
+    </ul>
+    <div class="header__promo">
+      <div class="header__promo-categories">
+        <div class="header__categories-panel">
+          <ul class="header__categories-list" id="categories-list">
+            <!-- JS will render categories here -->
+          </ul>
+        </div>
+      </div>
+      <div class="header__promo-banner">
+        <div class="header__banner">
+          <h1 class="header__banner-title">Fresh &amp; Healthy Organic Food</h1>
+          <p class="header__banner-sale">
+            Sale Up to
+            <span class="header__banner-sale-highlight">48% OFF</span>
+          </p>
+          <button class="header__banner-button" type="button">
+            Shop now
+            <svg class="header__banner-button-icon" width="15" height="12">
+              <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-go"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="header__features">
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-delivery-truck"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Free Shipping</h4>
+          <p class="header__features-desc">Free shipping with discount</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-headphones"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Great Support 24/7</h4>
+          <p class="header__features-desc">Instant access to Contact</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-shopping-bag"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">100% Secure Payment</h4>
+          <p class="header__features-desc">We ensure your money is safe</p>
+        </div>
+      </li>
+      <li class="header__features-item">
+        <span class="header__features-icon-wrap">
+          <svg class="header__features-icon" width="40" height="40">
+            <use href="/organic_shop/assets/svg-sprite-rXSJEFW9.svg#icon-package"></use>
+          </svg>
+        </span>
+        <div class="header__features-text">
+          <h4 class="header__features-title">Money-Back Guarantee</h4>
+          <p class="header__features-desc">30 days money-back</p>
+        </div>
       </li>
     </ul>
   </div>
@@ -123,6 +237,71 @@
 
     <main>
       <!-- Loads the specified .html file -->
+      <div class="banner container">
+  <div class="banner__content">
+    <ul class="banner__list">
+      <li class="banner__item">
+        <h4 class="banner__category">Best Deals</h4>
+        <h2 class="banner__title">Sale of the Month</h2>
+        <div class="banner__timer timer">
+          <div class="timer__field">
+            <span class="timer__value" data-days>00</span>
+            <span class="timer__label">Days</span>
+          </div>
+          <div class="timer__field">
+            <span class="timer__value" data-hours>00</span>
+            <span class="timer__label">Hours</span>
+          </div>
+          <div class="timer__field">
+            <span class="timer__value" data-minutes>00</span>
+            <span class="timer__label">Minutes</span>
+          </div>
+          <div class="timer__field">
+            <span class="timer__value" data-seconds>00</span>
+            <span class="timer__label">Seconds</span>
+          </div>
+        </div>
+        <button class="banner__button" type="button">
+          Shop Now
+          <svg class="banner__icon" width="15" height="12">
+            <use href=""></use>
+          </svg>
+        </button>
+      </li>
+      <li class="banner__item">
+        <h4 class="banner__category">85% Fat Free</h4>
+        <h2 class="banner__title">Low-Fat Meat</h2>
+        <div class="banner__description">
+          <p class="banner__text">
+            Started at<span class="banner__price">$79.99</span>
+          </p>
+        </div>
+        <button class="banner__button" type="button">
+          Shop Now
+          <svg class="banner__icon" width="15" height="12">
+            <use href=""></use>
+          </svg>
+        </button>
+      </li>
+      <li class="banner__item">
+        <h4 class="banner__category">Summer Sale</h4>
+        <h2 class="banner__title">100% Fresh Fruit</h2>
+        <div class="banner__description">
+          <p class="banner__text">
+            Up to <span class="banner__discount">64% OFF</span>
+          </p>
+        </div>
+        <button class="banner__button" type="button">
+          Shop Now
+          <svg class="banner__icon" width="15" height="12">
+            <use href=""></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
       <section class="vite-promo">
   <div class="container">
     <div class="vite-promo-thumb">
