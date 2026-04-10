@@ -42,10 +42,272 @@
 .nav-link.active::after {
   background: #747bff;
 } */
+
+.header {
+}
+
+.container {
+}
+
+.header__container {
+}
+
+.header__address {
+}
+
+.header__address-link {
+}
+
 .header__location-icon {
-  color: 808080;
+  color: #808080;
+}
+
+.header__top-controls {
+}
+
+.header__top-controls-item {
+}
+
+.header__top-controls-btn {
+}
+
+.header__top-controls-icon {
+}
+
+.header__logo {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.19;
+  letter-spacing: -0.03em;
+  color: #002603;
+}
+
+.header__logo-icon {
+  color: #00b207;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search-field {
+  display: inline-flex;
+  align-items: center;
+  width: 410px;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .header__search-icon {
-  color: 1A1A1A;
+  fill: #1a1a1a;
+  margin-left: 18px;
+  margin-right: 5px;
+}
+
+.header__search-input {
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: none;
+  padding: 0 12px 0 0;
+}
+
+.header__search-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #999999;
+}
+
+.header__search-button {
+  width: 98px;
+  height: 45px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  background-color: #00b207;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__contact {
+}
+
+.header__contact-link {
+}
+
+.header__contact-icon {
+  color: #1a1a1a;
+}
+
+.header__contact-label {
+}
+
+.header__contact-phone {
+}
+
+.header__nav-wrapper {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 64px;
+  padding: 0 16px;
+}
+
+.header__burger-btn {
+  background-color: #00b207;
+  height: 100%;
+  width: 64px;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: none;
+}
+
+.header__burger-btn {
+  display: none;
+}
+
+.header__burger-icon {
+  fill: #ffffff;
+}
+
+.header__categories-toggle {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.header__categories-toggle-icon {
+  color: #ffffff;
+}
+
+.header__nav {
+  flex: 1;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__nav-link {
+  color: #808080;
+}
+
+.header__submenu-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+}
+
+.header__submenu-icon {
+  color: #ffffff;
+  display: block;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
+}
+
+.header__actions-item {
+}
+
+.header__actions-icon {
+  color: #ffffff;
+}
+
+.header__promo {
+}
+
+.header__promo-categories {
+}
+
+.header__categories-panel {
+}
+
+.header__categories-list {
+}
+
+.header__promo-banner {
+}
+
+.header__banner {
+}
+
+.header__banner-title {
+}
+
+.header__banner-sale {
+}
+
+.header__banner-sale-highlight {
+}
+
+.header__banner-button {
+}
+
+.header__banner-button-icon {
+  color: #ffffff;
+}
+
+.header__features {
+}
+
+.header__features-item {
+}
+
+.header__features-icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #808080;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header__features-icon {
+  color: #00b207;
+}
+
+.header__features-text {
+}
+
+.header__features-title {
+}
+
+.header__features-desc {
 }

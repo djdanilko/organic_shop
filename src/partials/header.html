@@ -58,92 +58,94 @@
         <span class="header__contact-phone">(219) 555-0114</span></a
       >
     </address>
-    <button class="header__burger-btn" type="button" aria-label="Open menu">
-      <svg class="header__burger-icon" width="24" height="24">
-        <use href="./img/svg-sprite.svg#icon-burger-menu"></use>
-      </svg>
-    </button>
-    <button class="header__categories-toggle" type="button">
-      All Categories
-      <svg class="header__categories-toggle-icon" width="7" height="3.5">
-        <use href="./img/svg-sprite.svg#icon-down"></use>
-      </svg>
-    </button>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="./index.html">Home</a>
-          <button
-            class="header__submenu-btn"
-            type="button"
-            aria-label="Open Home submenu"
-          >
-            <svg class="header__submenu-icon" width="7" height="3.5">
-              <use href="./img/svg-sprite.svg#icon-down"></use>
-            </svg>
-          </button>
+    <div class="header__nav-wrapper">
+      <button class="header__burger-btn" type="button" aria-label="Open menu">
+        <svg class="header__burger-icon" width="40" height="40">
+          <use href="./img/svg-sprite.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <button class="header__categories-toggle" type="button">
+        All Categories
+        <svg class="header__categories-toggle-icon" width="7" height="3.5">
+          <use href="./img/svg-sprite.svg#icon-down"></use>
+        </svg>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./index.html">Home</a>
+            <button
+              class="header__submenu-btn"
+              type="button"
+              aria-label="Open Home submenu"
+            >
+              <svg class="header__submenu-icon" width="7" height="3.5">
+                <use href="./img/svg-sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Shop</a>
+            <button
+              class="header__submenu-btn"
+              type="button"
+              aria-label="Open Shop submenu"
+            >
+              <svg class="header__submenu-icon" width="7" height="3.5">
+                <use href="./img/svg-sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Pages</a>
+            <button
+              class="header__submenu-btn"
+              type="button"
+              aria-label="Open Pages submenu"
+            >
+              <svg class="header__submenu-icon" width="7" height="3.5">
+                <use href="./img/svg-sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Blog</a>
+            <button
+              class="header__submenu-btn"
+              type="button"
+              aria-label="Open Blog submenu"
+            >
+              <svg class="header__submenu-icon" width="7" height="3.5">
+                <use href="./img/svg-sprite.svg#icon-down"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">About Us</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__actions">
+        <li class="header__actions-item">
+          <svg class="header__actions-icon" width="32" height="32">
+            <use href="./img/svg-sprite.svg#icon-heart"></use>
+          </svg>
         </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">Shop</a>
-          <button
-            class="header__submenu-btn"
-            type="button"
-            aria-label="Open Shop submenu"
-          >
-            <svg class="header__submenu-icon" width="7" height="3.5">
-              <use href="./img/svg-sprite.svg#icon-down"></use>
-            </svg>
-          </button>
+        <li class="header__actions-item">
+          <svg class="header__actions-icon" width="32" height="32">
+            <use href="./img/svg-sprite.svg#icon-bag"></use>
+          </svg>
         </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">Pages</a>
-          <button
-            class="header__submenu-btn"
-            type="button"
-            aria-label="Open Pages submenu"
-          >
-            <svg class="header__submenu-icon" width="7" height="3.5">
-              <use href="./img/svg-sprite.svg#icon-down"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">Blog</a>
-          <button
-            class="header__submenu-btn"
-            type="button"
-            aria-label="Open Blog submenu"
-          >
-            <svg class="header__submenu-icon" width="7" height="3.5">
-              <use href="./img/svg-sprite.svg#icon-down"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">About Us</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="">Contact Us</a>
+        <li class="header__actions-item">
+          <svg class="header__actions-icon" width="32" height="32">
+            <use href="./img/svg-sprite.svg#icon-user"></use>
+          </svg>
         </li>
       </ul>
-    </nav>
-    <ul class="header__actions">
-      <li class="header__actions-item">
-        <svg class="header__actions-icon" width="32" height="32">
-          <use href="./img/svg-sprite.svg#icon-heart"></use>
-        </svg>
-      </li>
-      <li class="header__actions-item">
-        <svg class="header__actions-icon" width="32" height="32">
-          <use href="./img/svg-sprite.svg#icon-cart"></use>
-        </svg>
-      </li>
-      <li class="header__actions-item">
-        <svg class="header__actions-icon" width="32" height="32">
-          <use href="./img/svg-sprite.svg#icon-user"></use>
-        </svg>
-      </li>
-    </ul>
+    </div>
     <div class="header__promo">
       <div class="header__promo-categories">
         <div class="header__categories-panel">
@@ -176,7 +178,7 @@
           </svg>
         </span>
         <div class="header__features-text">
-          <h4 class="header__features-title">Free Shipping</h4>
+          <h3 class="header__features-title">Free Shipping</h3>
           <p class="header__features-desc">Free shipping with discount</p>
         </div>
       </li>
@@ -187,7 +189,7 @@
           </svg>
         </span>
         <div class="header__features-text">
-          <h4 class="header__features-title">Great Support 24/7</h4>
+          <h3 class="header__features-title">Great Support 24/7</h3>
           <p class="header__features-desc">Instant access to Contact</p>
         </div>
       </li>
@@ -198,7 +200,7 @@
           </svg>
         </span>
         <div class="header__features-text">
-          <h4 class="header__features-title">100% Secure Payment</h4>
+          <h3 class="header__features-title">100% Secure Payment</h3>
           <p class="header__features-desc">We ensure your money is safe</p>
         </div>
       </li>
@@ -209,7 +211,7 @@
           </svg>
         </span>
         <div class="header__features-text">
-          <h4 class="header__features-title">Money-Back Guarantee</h4>
+          <h3 class="header__features-title">Money-Back Guarantee</h3>
           <p class="header__features-desc">30 days money-back</p>
         </div>
       </li>
