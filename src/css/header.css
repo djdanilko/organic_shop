@@ -249,9 +249,13 @@
 }
 
 .header__promo {
+  display: flex;
+  gap: 24px;
+  margin-top: 23px;
 }
 
 .header__promo-categories {
+  flex: 0 0 312px;
 }
 
 .header__categories-panel {
@@ -261,21 +265,60 @@
 }
 
 .header__promo-banner {
+  width: 984px;
+  height: 560px;
+  background-image: url("../img/header-bannar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
 }
 
 .header__banner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 554px;
+  padding-left: 48px;
 }
 
 .header__banner-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--gray-scale-white, #ffffff);
 }
 
 .header__banner-sale {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .header__banner-sale-highlight {
+  color: var(--gray-scale-white, #ffffff);
 }
 
 .header__banner-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 43px;
+  padding: 16px 40px;
+  width: 191px;
+  height: 51px;
+  background-color: #00b207;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--gray-scale-white, #ffffff);
 }
 
 .header__banner-button-icon {
