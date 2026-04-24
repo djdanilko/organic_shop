@@ -1,4 +1,11 @@
 .banner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.banner.container {
+  max-width: 1320px;
+  background-color: #ffffff;
 }
 
 .banner__content {
@@ -10,44 +17,179 @@
 }
 
 .banner__item {
-  background-image: url();
+  box-sizing: border-box;
+  width: 424px;
+  height: 536px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.best_deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 24px;
+  text-align: center;
+  background-image: url('../img/BGbannar/bg_bannar_best-deals.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.fat_free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 24px;
+  text-align: center;
+  background-image: url('../img/BGbannar/bg_bannar_fat-free.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.summer_sale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 24px;
+  text-align: center;
+  background-image: url('../img/BGbannar/bg_bannar_summer-sale.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .banner__category {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.banner_black_title {
+  color: #1a1a1a;
 }
 
 .banner__title {
+  max-width: 360px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.fat_free .banner__title {
+  margin-bottom: 8px;
+}
+
+.summer_sale .banner__title {
+  max-width: none;
+  margin-bottom: 12px;
+  color: #1a1a1a;
 }
 
 .banner__timer {
+  margin-bottom: 25px;
 }
 
 .timer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
 }
 
 .timer__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 36px;
+  color: #ffffff;
+}
+
+.timer__field:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  top: -1px;
+  right: -12px;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .timer__value {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .timer__label {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .banner__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 162px;
+  min-height: 45px;
+  padding: 14px 32px;
+  border: 0;
+  border-radius: 43px;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #00b207;
 }
 
 .banner__icon {
+  flex-shrink: 0;
+  fill: currentColor;
 }
 
 .banner__description {
+  margin-bottom: 16px;
 }
 
 .banner__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .banner__price {
+  margin-left: 4px;
+  font-weight: 600;
+  color: #ff8a00;
 }
 
 .banner__discount {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  margin-left: 8px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  font-weight: 600;
+  color: #fcc900;
+}
+
+.summer_sale .banner__text {
+  color: #1a1a1a;
 }

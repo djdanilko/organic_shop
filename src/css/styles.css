@@ -13,6 +13,9 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./bannar.css');
+@import url('./top-categories.css');
+@import url('./featured-products.css');
+@import url('./team.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');

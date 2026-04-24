@@ -4,11 +4,12 @@
   line-height: 1.5;
   font-weight: 400;
   color: #1a1a1a;
-  background-color: #ffffff;
+  background-color: #edf2ee;
 }
 
 body {
   margin: 0;
+  background-color: #edf2ee;
 }
 
 /* Sticky footer (uncomment if needed)
