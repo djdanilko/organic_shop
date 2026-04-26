@@ -62,7 +62,6 @@
   transition: opacity 200ms ease;
 }
 
-.team-card--active .team-card__photo::before,
 .team-card:hover .team-card__photo::before,
 .team-card:focus-within .team-card__photo::before {
   opacity: 1;
@@ -96,7 +95,6 @@
   transition: opacity 200ms ease, transform 200ms ease;
 }
 
-.team-card--active .team-card__socials,
 .team-card:hover .team-card__socials,
 .team-card:focus-within .team-card__socials {
   opacity: 1;
@@ -116,10 +114,6 @@
 
 .team-card__social-link:hover,
 .team-card__social-link:focus {
-  background-color: #00b207;
-}
-
-.team-card--active .team-card__socials li:nth-child(2) .team-card__social-link {
   background-color: #00b207;
 }
 
