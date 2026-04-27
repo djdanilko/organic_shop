@@ -1,3 +1,6 @@
+import iziToast from "izitoast";
+
+import "izitoast/dist/css/iziToast.min.css";
 // const form = document.querySelector('.header__search');
 // const input = document.querySelector('.header__search-input');
 // const button = document.querySelector('.header__search-button');
@@ -81,7 +84,7 @@ function renderResults(items) {
 
   // если ничего не найдено
   if (items.length === 0) {
-    results.textContent = 'Result 0';
+    results.textContent = 'No results found';
     return;
   }
 
@@ -139,7 +142,14 @@ input.addEventListener('input', (e) => {
   debouncedSearch(value);
 });
 
-
+function showToast(type, message) {
+  iziToast[type]({
+    title: type === 'error' ? 'Error' : 'Success',
+    message: message,
+    position: 'topRight',
+    timeout: 2500
+  });
+}
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -147,8 +157,8 @@ form.addEventListener('submit', (event) => {
   const value = input.value.trim();
 
   if (value === '') {
-    alert('ERROR: EMPTY');
-    return;
+    showToast('error', 'Please enter a search query');
+  return;
   }
 
   handleSearch(value);
